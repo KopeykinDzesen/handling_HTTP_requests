@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <a href="{% url 'exampleURL:special_case_2009' %}">exampleURL:special_case_2009</a><br>
+    <a href="{% url 'exampleURL:year_archive' 12 %}">exampleURL:year_archive</a> with year: 12<br>
+    <a href="{% url 'exampleURL:year_archive' 14 %}">exampleURL:year_archive</a> with year: 14<br>
+    <a href="{% url 'exampleURL:year_archive' 18 %}">exampleURL:year_archive</a> with year: 18<br>
+    <a href="{% url 'exampleURL:month_archive' 18 222 %}">exampleURL:month_archive</a> with year: 18 and month: 222<br>
+    <a href="{% url 'exampleURL:month_archive' 19 224 %}">exampleURL:month_archive</a> with year: 19 and month: 224<br>
+    <a href="{% url 'exampleURL:month_archive' 20 226 %}">exampleURL:month_archive</a> with year: 20 and month: 226<br>
+    <a href="{% url 'exampleURL:article_detail' 20 229 'qwerty' %}">exampleURL:article_detail</a> with year: 20, month: 229 and slug: 'qwerty'<br>
+    <a href="{% url 'exampleURL:article_detail' 22 212 'asdfgh' %}">exampleURL:article_detail</a> with year: 22, month: 212 and slug: 'asdfgh'<br>
+    <a href="{% url 'exampleURL:article_detail' 24 211 'zxcvbn' %}">exampleURL:article_detail</a> with year: 24, month: 211 and slug: 'zxcvbn'<br>
+    <a href="{% url 'exampleURL:article_detail_converters' 1998 09 'qwerty' %}">exampleURL:article_detail_converters</a> with year: 1998, month: 09 and slug: 'qwerty'<br>
+    <a href="{% url 'exampleURL:article_detail_converters' 2009 01 'qwerty' %}">exampleURL:article_detail_converters</a> with year: 2009, month: 01 and slug: 'qwerty'<br>
+    <a href="{% url 'exampleURL:article_detail_converters' 2015 11 'qwerty' %}">exampleURL:article_detail_converters</a> with year: 2015, month: 01 and slug: 'qwerty'<br>
+    <a href="{% url 'exampleURL:article_detail_regexp' '1998' '09' 'qwerty' %}">exampleURL:article_detail_regexp</a> with year: 1998, month: 09 and slug: 'qwerty'<br>
+    <a href="{% url 'exampleURL:article_detail_regexp' '2009' '01' 'qwerty' %}">exampleURL:article_detail_regexp</a> with year: 2009, month: 01 and slug: 'qwerty'<br>
+    <a href="{% url 'exampleURL:article_detail_regexp' '2015' '11' 'qwerty' %}">exampleURL:article_detail_regexp</a> with year: 2015, month: 01 and slug: 'qwerty'<br>
+    <a href="{% url 'exampleURL:page2' 77 %}">exampleURL:page</a> with num: 77<br>
+    <a href="{% url 'exampleURL:page1' %}">exampleURL:page</a> without num<br>
+    <a href="{% url 'exampleURL:parameter_passing' %}">exampleURL:parameter_passing</a> without parameters<br>
+</body>
+</html>
